@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    color: #111;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark-theme {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  .dark-theme .container {
+    background: #1f1f1f;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #theme-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .timer {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .primary { background-color: #007bff; }
+  .warning { background-color: #ffc107; color: #000; }
+  .danger { background-color: #dc3545; }
+  .info { background-color: #17a2b8; }
+  .secondary { background-color: #6c757d; }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .laps-container {
+    margin-top: 20px;
+  }
+  
+  .laps-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .laps-wrapper {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  #laps {
+    list-style: none;
+  }
+  
+  #laps li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #laps li.fastest { color: green; }
+  #laps li.slowest { color: red; }
+  
+  .dark-theme #laps li {
+    border-color: #444;
+  }
+  
