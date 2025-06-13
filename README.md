@@ -25,6 +25,6 @@ Supports lap tracking, theme toggle, and localStorage persistence.
 ## 📸 Screenshots
 
 ![Stopwatch](screenshots/stopwatch.png)
-![Stopwatch](screenshots/stopwatchb.png)
+![Stopwatch](screenshots/sstopwatchb.png)
 
 ---
